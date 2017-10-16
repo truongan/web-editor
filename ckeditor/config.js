@@ -14,12 +14,13 @@ CKEDITOR.editorConfig = function( config ) {
 	config.height = "100%";
 	config.extraPlugins = 'sourcedialog';
 	
-	config.toolbarGroups = [
+config.toolbarGroups = [
 		{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
 		{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
 		{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker', 'editing' ] },
 		{ name: 'forms', groups: [ 'forms' ] },
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+		'/',
 		{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] },
 		{ name: 'links', groups: [ 'links' ] },
 		{ name: 'insert', groups: [ 'insert' ] },
@@ -30,6 +31,6 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'about', groups: [ 'about' ] }
 	];
 
-	config.removeButtons = 'Save,NewPage,Preview,Print,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash,About,Scayt,SelectAll,CreateDiv,Language,BidiRtl,BidiLtr,Smiley,SpecialChar,PageBreak,Anchor,Iframe,Styles';
+	config.removeButtons = 'Save,NewPage,Preview,Print,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash,About,Scayt,SelectAll,CreateDiv,Language,BidiRtl,BidiLtr,Smiley,SpecialChar,PageBreak,Anchor,Iframe,Styles,Maximize,ShowBlocks';
 
 };
