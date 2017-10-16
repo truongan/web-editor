@@ -12,7 +12,8 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.mathJaxLib = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML';
 
 	config.height = "100%";
-
+	config.extraPlugins = 'sourcedialog';
+	
 	config.toolbarGroups = [
 		{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
 		{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
@@ -29,6 +30,6 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'about', groups: [ 'about' ] }
 	];
 
-	config.removeButtons = 'Save,NewPage,Preview,Print,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash,About';
+	config.removeButtons = 'Save,NewPage,Preview,Print,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Flash,About,Scayt,SelectAll,CreateDiv,Language,BidiRtl,BidiLtr,Smiley,SpecialChar,PageBreak,Anchor,Iframe,Styles';
 
 };
