@@ -30,7 +30,7 @@ $(document).ready(function(){
 	});
 
 	$("#save").click(function(){
-		$("#save > a").attr("href", "data:text/html;base64," + b64EncodeUnicode($('#editor').html()) ) ;
+		$("#save > a").attr("href", "data:text/html;base64," + b64EncodeUnicode( CKEDITOR.instances.editor.getData() )) ;
 		$("#save > a").attr("download", file_name) ;
 		console.log($("#save > a"));
 	});
